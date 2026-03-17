@@ -510,6 +510,21 @@
     border: 1px solid rgba(255,255,255,0.08);
     color: var(--muted);
   }
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    color: var(--red-bright);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(192,57,43,0.3);
+    padding-bottom: 2px;
+    transition: border-color 0.2s, color 0.2s, gap 0.2s;
+  }
+  .project-link:hover { border-color: var(--red-bright); gap: 12px; }
   .project-card .corner-deco {
     position: absolute;
     bottom: 16px; right: 16px;
@@ -693,9 +708,9 @@
     </div>
 
     <div class="wip-badge">
-      <div class="wip-label">⬤ En cours de dev</div>
+      <div class="wip-label">⬤ Disponible sur Modrinth</div>
       <div class="wip-title">VALOCRAFT</div>
-      <div class="wip-sub">Plugin Minecraft · Phase Alpha</div>
+      <div class="wip-sub">Plugin Minecraft · v1.1.1 · Paper 1.21.1</div>
     </div>
   </section>
 
@@ -739,40 +754,50 @@
     <div class="projects-grid">
 
       <div class="project-card featured">
-        <span class="project-badge active">⬤ WIP — Alpha</span>
+        <span class="project-badge active">⬤ v1.1.1 — Live</span>
         <h3 class="project-title">VALOCRAFT</h3>
         <p class="project-desc">
-          Un plugin Minecraft inspiré de Valorant : agents, abilities, rounds compétitifs.
-          Un croisement entre le FPS tactique et le sandbox en blocs.
-          Actuellement en phase de développement actif.
+          Transforme ton serveur Minecraft en arène Valorant. 6 agents jouables (Phoenix, Jett, Sage, Reyna, Omen, Raze), système d'armes avec balles physiques, économie de crédits, shop GUI — une immersion tactique complète.
         </p>
         <div class="project-stack">
           <span class="stack-item">Java</span>
-          <span class="stack-item">Spigot API</span>
-          <span class="stack-item">Minecraft</span>
-          <span class="stack-item">Packet Interceptor</span>
+          <span class="stack-item">Paper 1.21.1</span>
+          <span class="stack-item">PvP / Compétitif</span>
+          <span class="stack-item">6 Agents</span>
+          <span class="stack-item">Système de balles</span>
         </div>
+        <a href="https://modrinth.com/plugin/valocraft_stimoi" target="_blank" class="project-link">
+          <span>Voir sur Modrinth</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+        <div class="corner-deco"></div>
+      </div>
+
+      <div class="project-card side">
+        <span class="project-badge active">⬤ Live</span>
+        <h3 class="project-title">ZYRAJOBS</h3>
+        <p class="project-desc">
+          Système de métiers complet avec GUI immersif, déblocages progressifs et 4 professions : Mineur, Fermier, Chasseur, Alchimiste. Niveau 1 à 50, bonus de prestige.
+        </p>
+        <div class="project-stack">
+          <span class="stack-item">Spigot 1.21</span>
+          <span class="stack-item">4 Jobs</span>
+          <span class="stack-item">Lv. 1–50</span>
+        </div>
+        <a href="https://modrinth.com/plugin/zyrajobs" target="_blank" class="project-link">
+          <span>Voir sur Modrinth</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
         <div class="corner-deco"></div>
       </div>
 
       <div class="project-card side">
         <span class="project-badge">Infra</span>
-        <h3 class="project-title">ZyraHost</h3>
-        <p class="project-desc">Configuration et gestion serveur — hébergement de projets game.</p>
+        <h3 class="project-title">ZYRAHOST</h3>
+        <p class="project-desc">Hébergement et gestion serveur — la base qui fait tourner les projets.</p>
         <div class="project-stack">
           <span class="stack-item">Linux</span>
           <span class="stack-item">Docker</span>
-        </div>
-        <div class="corner-deco"></div>
-      </div>
-
-      <div class="project-card side">
-        <span class="project-badge">Collection</span>
-        <h3 class="project-title">Game Stack</h3>
-        <p class="project-desc">Une bibliothèque de jeux soigneusement sélectionnés — 6+ titres dans la collection.</p>
-        <div class="project-stack">
-          <span class="stack-item">Minecraft</span>
-          <span class="stack-item">+6 jeux</span>
         </div>
         <div class="corner-deco"></div>
       </div>
