@@ -439,7 +439,7 @@
   .projects-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     gap: 20px;
   }
   .project-card {
@@ -792,12 +792,30 @@
       </div>
 
       <div class="project-card side">
+        <span class="project-badge active">⬤ Live</span>
+        <h3 class="project-title">CRYSTAL BLAST</h3>
+        <p class="project-desc">Block Blast réinventé — des gemmes cristallines, des effets visuels améliorés et une progression plus profonde. Jouable directement dans le navigateur.</p>
+        <div class="project-stack">
+          <span class="stack-item">HTML</span>
+          <span class="stack-item">CSS</span>
+          <span class="stack-item">JavaScript</span>
+          <span class="stack-item">zyrahost.fr</span>
+        </div>
+        <a href="https://crysalblast.zyrahost.fr" target="_blank" class="project-link">
+          <span>Jouer maintenant</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+        <div class="corner-deco"></div>
+      </div>
+
+      <div class="project-card side">
         <span class="project-badge">Infra</span>
         <h3 class="project-title">ZYRAHOST</h3>
-        <p class="project-desc">Hébergement et gestion serveur — la base qui fait tourner les projets.</p>
+        <p class="project-desc">Hébergement HTML gratuit avec sous-domaine *.zyrahost.fr — la base qui fait tourner les projets.</p>
         <div class="project-stack">
           <span class="stack-item">Linux</span>
           <span class="stack-item">Docker</span>
+          <span class="stack-item">SSL auto</span>
         </div>
         <div class="corner-deco"></div>
       </div>
